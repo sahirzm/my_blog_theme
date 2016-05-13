@@ -1,6 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
+div.site {
+	background-color: #DCF1F7;
+}
+header.site-header {
+	width: 100%;
+	background: url('/wp-content/uploads/background.jpg') no-repeat scroll;
+	background-size: cover;
+	background-position: right top;
+	margin-bottom: 23px;
+}
 .widget .widget-title {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5;
@@ -21,9 +31,24 @@ li, a {
 .site-branding .site-title a {
 	font-size: 2.5rem;
 }
+.site-branding .site-title a:hover {
+	color: initial;
+	text-decoration: none;
+}
 .site-branding .site-description {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	line-height: 1.5;
+	margin-top: 0;
+	color: #444;
+}
+.site-branding .my-photo {
+	text-align: center;
+	height: 150px;
+	margin-bottom: 15px;
+}
+.site-branding .my-photo img {
+	border-radius: 75px;
+	max-height: 100%;
 }
 div.entry-content,
 div.entry-content * {
@@ -56,7 +81,8 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 }
 div.entry-content, footer.entry-footer {
 	float: none !important;
-	width: 100% !important;
+	margin-right: 7.6923%;
+	width: auto !important;
 }
 footer.entry-footer {
 	margin-top: 23px !important;
@@ -121,3 +147,10 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
 }
 
 /************ theme end ************/
+
+
+@media screen and (min-width: 75em) {
+	.site-header {
+		background-position: center center !important;
+	}
+}
